@@ -22,7 +22,7 @@ services:
     restart: unless-stopped
 
   flaskapp:
-    image: rohan700/two-tier-flask-app:latest
+    build: .
     container_name: flaskapp
     environment:
       MYSQL_HOST: mysql
